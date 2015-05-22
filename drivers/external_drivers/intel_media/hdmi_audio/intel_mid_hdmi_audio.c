@@ -370,7 +370,7 @@ inline int had_read_modify(uint32_t offset, uint32_t data, uint32_t mask)
  * @mask : mask
  *
  */
-inline int had_read_modify_aud_config_v2(struct snd_pcm_substream *substream,
+int had_read_modify_aud_config_v2(struct snd_pcm_substream *substream,
 					uint32_t data, uint32_t mask)
 {
 	union aud_cfg cfg_val = {.cfg_regval = 0};
